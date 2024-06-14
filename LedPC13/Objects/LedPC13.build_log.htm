@@ -8,7 +8,7 @@ Copyright (C) 2023 ARM Ltd and ARM Germany GmbH. All rights reserved.
 License Information: Thu Bui
 DHCN
 User-based license: Keil MDK Community (non-commercial free of charge)
-Valid until: Jun 1 2033. Cached until: Apr 5 2024
+Valid until: Jun 1 2033. Cached until: May 23 2024
  
 Tool Versions:
 Toolchain:       Keil MDK Community (non-commercial free of charge  Version: 5.39.0.0
@@ -24,24 +24,25 @@ Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V3.2.0.0
 Dialog DLL:      TCM.DLL V1.56.4.0
  
 <h2>Project:</h2>
-D:\Keil uVision Project\STM32F10\LedPC13\LedPC13.uvprojx
-Project File Date:  03/31/2024
+D:\Keil uVision Project\ARM_STM32F103\LedPC13\LedPC13.uvprojx
+Project File Date:  05/16/2024
 
 <h2>Output:</h2>
 *** Warning: The configured compiler version '5.06 update 7 (build 960)' does not support the selected User Based Licensing technology.
 *** Using Compiler 'V5.06 update 7 (build 960)', folder: 'D:\Keil_uVision\Keil_v5\ARM\ARM_Compiler_5.06u7\Bin'
 Rebuild target 'Target 1'
 assembling startup_stm32f10x_md.s...
+compiling Config.c...
 compiling Main.c...
 Config.h(2): warning:  #1-D: last line of file ends without a newline
   void GPIO_ConfigInput(void);
-Main.c(41): warning:  #111-D: statement is unreachable
+Main.c(20): warning:  #111-D: statement is unreachable
   	return 0;
 Main.c: 2 warnings, 0 errors
-compiling Config.c...
 compiling system_stm32f10x.c...
 linking...
-Program Size: Code=892 RO-data=268 RW-data=4 ZI-data=1636  
+Program Size: Code=816 RO-data=252 RW-data=0 ZI-data=1632  
+FromELF: creating hex file...
 ".\Objects\LedPC13.axf" - 0 Error(s), 2 Warning(s).
 
 <h2>Software Packages used:</h2>
@@ -69,10 +70,10 @@ Package Vendor: Keil
    * Component: ARM::CMSIS:CORE@5.6.0
 
    * Component: Keil::Device:Startup@1.0.0
-      Source file:   Device/Source/ARM/startup_stm32f10x_md.s
       Include file:  RTE_Driver/Config/RTE_Device.h
-      Source file:   Device/Source/system_stm32f10x.c
+      Source file:   Device/Source/ARM/startup_stm32f10x_md.s
       Source file:   Device/Source/ARM/STM32F1xx_OPT.s
+      Source file:   Device/Source/system_stm32f10x.c
 Build Time Elapsed:  00:00:01
 </pre>
 </body>
